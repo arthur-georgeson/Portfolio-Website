@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('https://github.com/arthur-georgeson/Portfolio-Website/blob/main/public/img/website_background_dark.jpg?raw=true'),
+                              radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+            padding: 2rem;
+            border-radius: 15px; /* Smoothed edges */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            color: white;
+        }
+
+        .contact-form .form-label {
+            color: white;
+        }
+
+        .contact-form .btn-primary {
+            border-radius: 8px;
+            background-color: #712cf9;
+            color: white;
+        }
+
+        .contact-form .btn-primary:hover {
+            background-color: #6528e0;
+        }
+
+        /* Ensure form inputs and buttons have rounded edges */
+        .form-control, .btn {
+            border-radius: 8px;
+        }
+
+        /* Custom Box Width for Form */
+        .form-box {
+            max-width: 500px; /* Adjust the width of the form */
+            margin: 0 auto; /* Center the form */
+        }
+
+        /* Center the Contact Form Section Vertically and Horizontally */
+        .form-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh; /* Full viewport height */
+            padding-top:50px
+        }
+
+
+
+    </style>
+</head>
+<body class="d-flex h-100 text-center text-bg-dark">
+
+    <div class="cover-container my-4 d-flex w-75 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0 text-white">A.G MSc AMIMechE</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link fw-bold py-1 px-3 text-white active" aria-current="page" href="/">Home </a>
+              <a class="nav-link fw-bold py-1 px-3 text-white" href="/work">My Work </a>
+              <a class="nav-link fw-bold py-1 px-3 text-white" href="/about">About me </a>
+              <a class="nav-link fw-bold py-1 px-3 text-white" href="/contact">Contact </a>
+            </nav>
+          </div>
+        </header>
+    
+    <!-- Contact Form Section -->
+    <section class="section form-section" id="contact">
+        <div class="container">
+          <div class="section-heading text-center">
+            <h3 class="title">Contact</h3>
+            <h5 class="subtitle">Get in touch</h5>
+          </div>
+          <br>
+          
+          <div class="columns justify-content-center">
+            <div class="column form-box">
+              <!-- Contact Form -->
+              <div class="contact-form">
+                <form action="/submit" method="post">
+                  <!-- Name Input -->
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name = "name" placeholder="Your Name">
+                  </div>
+
+                  <!-- Email Input -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email"  placeholder="Your Email">
+                  </div>
+
+                  <!-- Message Textarea -->
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"  name="message"  placeholder="Your Message"></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+
+                  <div class="d-grid gap-2 mt-3">
+                    <a href="https://www.linkedin.com/in/arthur-georgeson-942318196/" target="_blank" class="btn btn-outline-light">
+                      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">
+                      Connect on LinkedIn
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+    </section>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="mt-auto text-white-50">
+      <p>© 2025</p>
+    </footer>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
